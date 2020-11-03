@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborde HW8 - Exercise 4</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+    <form>
+        <p>
+            <input type="text" name="name" id="name" placeholder="Name:" required><br><br>
+            <input type="text" name="email" id="email" placeholder="Email:" required>
+        </p>
+        <p>
+            <label for="payment">Payment Type:</label><br>
+            <input type="radio" name="payment" id="cash" value="CASH" checked>
+            <label for="cash">Cash</label>
+            <br>
+            <input type="radio" name="payment" id="cc" value="CC">
+            <label for="cc">Credit Card</label>
+            <br>
+            <input type="radio" name="payment" id="google" value="GOOG">
+            <label for="google">Google Pay</label>
+            <br>
+            <input type="radio" name="payment" id="apple" value="APPL">
+            <label for="apple">Apple Pay</label>
+            <br>
+        </p>
+        <p>
+            <input type="checkbox" id="promotion" name="promotion">
+            <label for="promotion">Sign me up for special promotions</label><br>
+        </p>
+        <p>
+            <label for="location">Preferred Location:</label>
+            <select id="location" name="location">
+                <option value="LA">Los Angeles</option>
+                <option value="OC">Orange County</option>
+                <option value="IE">Riverside</option>
+                <option value="SD">San Diego</option>
+            </select> 
+        </p>
+        <p>
+            <input type="submit" value="submit">
+            <input type="reset" value="cancel">
+        </p>
+    </form>
+    <table id="results">
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+    </table>
+    
+    <script src="../js/ex4.js"></script>
+    <a href="../index.html">Return to index</a>
+</body>
+</html>
